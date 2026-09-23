@@ -1,45 +1,62 @@
-# Test
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kenzie — Build Faster</title>
+<title>Turtify — Documentation</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
-  body{background:#0a0a0a;color:#fff;line-height:1.6}
-  nav{display:flex;justify-content:space-between;padding:20px 6%;align-items:center}
-  nav b{font-size:20px;letter-spacing:-1px}
-  nav a{color:#999;text-decoration:none;margin-left:20px;font-size:14px}
-  .hero{padding:80px 6% 40px;max-width:900px}
-  .hero h1{font-size:64px;line-height:0.95;letter-spacing:-3px;margin-bottom:20px}
-  .hero h1 span{color:#555}
-  .hero p{color:#888;font-size:18px;max-width:500px;margin-bottom:30px}
-  .btn{background:#fff;color:#000;padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:600;display:inline-block}
-  .btn2{border:1px solid #222;padding:14px 28px;border-radius:100px;text-decoration:none;color:#fff;margin-left:10px}
-  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#1a1a1a;margin:40px 6%;border:1px solid #1a1a1a;border-radius:16px;overflow:hidden}
-  .card{background:#111;padding:30px}
-  .card h3{margin-bottom:10px}
-  .card p{color:#666;font-size:14px}
-  @media(max-width:700px){.hero h1{font-size:42px}.grid{grid-template-columns:1fr}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{display:flex;background:#0f0f0f;color:#eee;min-height:100vh}
+aside{width:260px;background:#0a0a0a;border-right:1px solid #1e1e1e;padding:24px;position:sticky;top:0;height:100vh}
+aside b{font-size:18px;letter-spacing:-1px}
+aside .muted{color:#555;font-size:12px;margin:8px 0 20px;display:block}
+aside a{display:block;color:#888;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:14px}
+aside a.active,aside a:hover{background:#181818;color:#fff}
+main{flex:1;padding:40px 6%;max-width:800px}
+h1{font-size:48px;letter-spacing:-2px;margin-bottom:10px}
+h2{margin:40px 0 12px;font-size:22px}
+p,li{color:#999;line-height:1.7}
+code{background:#1c1c1c;border:1px solid #2a2a2a;padding:2px 6px;border-radius:6px;font-size:13px;color:#fff}
+pre{background:#121212;border:1px solid #222;padding:16px;border-radius:12px;overflow:auto;margin:14px 0}
+.tag{border:1px solid #222;padding:3px 8px;border-radius:20px;font-size:11px;color:#666}
 </style>
 </head>
 <body>
-<nav>
-  <b>KENZIE.</b>
-  <div><a href="#">Work</a><a href="#">GitHub</a><a href="#">Contact</a></div>
-</nav>
-<div class="hero">
-  <h1>We build <br><span>websites that</span><br> don't suck.</h1>
-  <p>I'm Kenzie — developer from Indonesia. I build fast, clean websites with HTML, Python & more. This is hosted 100% on GitHub.</p>
-  <a href="#" class="btn">View Projects</a>
-  <a href="#" class="btn2">GitHub Profile</a>
-</div>
-<div class="grid">
-  <div class="card"><h3>⚡ Fast</h3><p>No WordPress bloat. Just pure code, loads in <0.5s.</p></div>
-  <div class="card"><h3>📱 Responsive</h3><p>Looks perfect on your phone, tablet, and that weird plane panel.</p></div>
-  <div class="card"><h3>🔓 Open</h3><p>All code is open source on my GitHub.</p></div>
-</div>
+<aside>
+  <b>TURTIFY</b>
+  <span class="muted">v0.1.0 docs</span>
+  <a class="active">Introduction</a>
+  <a>Quickstart</a>
+  <a>Installation</a>
+  <a>API Reference</a>
+  <a>Examples</a>
+  <a style="margin-top:20px;color:#444">— Guides —</a>
+  <a>Auth</a>
+  <a>Deploy</a>
+</aside>
+<main>
+  <span class="tag">DOCUMENTATION</span>
+  <h1>Turtify</h1>
+  <p>Lightweight toolkit to make your turtle scripts run 10x faster. Or whatever your project is — you edit this part.</p>
+
+  <h2>Quickstart</h2>
+  <pre><code>npm install turtify
+import { turtify } from 'turtify'
+
+turtify.init({
+  apiKey: 'YOUR_KEY'
+})</code></pre>
+
+  <h2>Why Turtify?</h2>
+  <ul>
+    <li>⚡ Fast — no bloat</li>
+    <li>🔧 Simple API</li>
+    <li>📦 Works on GitHub Pages</li>
+  </ul>
+
+  <h2>Installation</h2>
+  <p>Put your real install steps here. This is just the layout.</p>
+  <pre><code>git clone https://github.com/Kenziescr/turtify</code></pre>
+</main>
 </body>
 </html>
